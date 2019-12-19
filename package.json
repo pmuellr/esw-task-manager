@@ -1,0 +1,39 @@
+{
+  "name": "esw-task-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "elasticsearch heartbeat simulator",
+  "license": "MIT",
+  "author": "Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)",
+  "homepage": "https://github.com/pmuellr/esw-task-manager",
+  "bin": {
+    "esw-task-manager": "esw-task-manager.js"
+  },
+  "scripts": {
+    "standard": "standard --verbose",
+    "test": "npm run -s standard",
+    "watch": "nodemon --exec 'npm run -s test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmuellr/esw-task-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmuellr/esw-task-manager/issues"
+  },
+  "standard": {
+    "ignore": [
+      "tmp/**/*",
+      "docs/**/*"
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "standard": "^14.3.1",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.5.0",
+    "meow": "^6.0.0"
+  }
+}
